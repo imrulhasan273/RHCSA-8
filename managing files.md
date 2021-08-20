@@ -60,3 +60,64 @@ chown root file1    # ownership to root of file1
 chown imrul:imrul file1 # ownership and group to imrul of file1
 ```
 
+---
+
+## **Soft and Hard Links**
+
+---
+
+- `inode` : pointer or number of a file on the hard disk
+    - Computer doesn't recognize the file name.
+    - Computer knows a file with `inode`.
+
+- `soft link` : Linked will be removed if file is removed or renamed.
+
+- `hard link` : Deleting , renaming or moving the original file will not affect the hard link.
+
+### Hard and Soft Link
+
+```sh
+ln      # Hard Link
+ln -s   # Soft Link
+```
+
+![](i/1.png)
+
+---
+
+### Soft Link
+
+```sh
+ls -ltri  # to see inode of files
+# 40813871623084217 -rw-r--r-- 1 imrul imrul 12 Aug 20 14:37 hulk
+```
+
+```sh
+/home/imrul $ touch hulk
+/home/imrul $ ls -ltri      # inode : 40813871623084217
+/home/imrul $ cd /tmp
+/tmp $
+/tmp $ ln -s /home/imrul/hulk   # Soft Link Created
+/tmp $ ls -ltri             # inode : 52635820644932163
+# so hulk in imrul and linked hulk in tmp has different inode.
+```
+
+### Hard Link
+
+```sh
+/home/imrul $ touch hulk
+/home/imrul $ ls -ltri      # inode : 156500087051133528
+/home/imrul $ cd /tmp
+/tmp $
+/tmp $ ln /home/imrul/hulk   # Hard Link Created
+/tmp $ ls -ltri             # inode : 156500087051133528
+# so hulk in imrul and linked hulk in tmp has same inode.
+```
+
+---
+
+## **Input and Output Redirects**
+
+---
+
+
