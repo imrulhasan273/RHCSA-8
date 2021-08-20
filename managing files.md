@@ -120,4 +120,41 @@ ls -ltri  # to see inode of files
 
 ---
 
+### 3 Types of Redirects
+
+1. `stdin` [file descriptior number: 0]
+2. `stdout` [file descriptior number: 1]
+3. `stderr` [file descriptior number: 2]
+
+---
+
+### **stdout**
+
+- by default running command outputs goes to terminal
+- Output of a file can be routed to file using `>` symbol
+- Output of a file can be appended to file using `>>` symbol
+
+
+```sh
+/home $ ls -l > file.txt                # Edit file.txt with text of list of the dir [overwrite]
+/home $ echo "hello world" > file.txt   # Edit file.txt with text of list of the dir [overwrite]
+/home $ ls -l >> file.txt               # Append text in the file.txt                [Append]
+/home $ echo "hello world" >> file.txt  # Append text in the file.txt                [Append]
+/home $ cat > file.txt
+```
+
+### **stdin**
+
+- feeding file contents to a file
+
+```sh
+echo "write something..." > letter
+mail -s "From Imrul" imrulhasan273@gmail.com < letter
+```
+
+---
+
+
+
+
 
