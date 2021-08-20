@@ -62,7 +62,7 @@ chown imrul:imrul file1 # ownership and group to imrul of file1
 
 ---
 
-## **Soft and Hard Links**
+# **Soft and Hard Links**
 
 ---
 
@@ -116,7 +116,7 @@ ls -ltri  # to see inode of files
 
 ---
 
-## **Input and Output Redirects**
+# **Input and Output Redirects**
 
 ---
 
