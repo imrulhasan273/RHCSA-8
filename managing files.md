@@ -152,9 +152,19 @@ echo "write something..." > letter
 mail -s "From Imrul" imrulhasan273@gmail.com < letter
 ```
 
+```sh
+ls -l /root                 # error
+ls -l /root 2>errorfile     # Error msg is sent to file | 2 => output
+telnet localhost 2>errorfile    # Outputs non Error msg and Error msg to errorfile
+```
+
 ---
 
+---
 
+# **Pipes**
+
+---
 
 
 
