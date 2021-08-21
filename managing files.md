@@ -177,4 +177,14 @@ ls -l | more    # Piped ---> keep Spacing bar to view more....
 
 ---
 
+# **Help Commands**
 
+---
+
+### types of Help Commands
+
+1. whatis command
+2. command --help   
+3. man command        
+
+---
