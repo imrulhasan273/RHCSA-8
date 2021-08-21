@@ -187,4 +187,12 @@ ls -l | more    # Piped ---> keep Spacing bar to view more....
 2. command --help   
 3. man command        
 
+
+```sh
+whatis ls
+ls --help
+man ls
+```
+
 ---
+
