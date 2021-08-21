@@ -153,8 +153,8 @@ mail -s "From Imrul" imrulhasan273@gmail.com < letter
 ```
 
 ```sh
-ls -l /root                 # error
-ls -l /root 2>errorfile     # Error msg is sent to file | 2 => output
+ls -l /root                     # error
+ls -l /root 2>errorfile         # Error msg is sent to file | 2 => output
 telnet localhost 2>errorfile    # Outputs non Error msg and Error msg to errorfile
 ```
 
@@ -165,6 +165,16 @@ telnet localhost 2>errorfile    # Outputs non Error msg and Error msg to errorfi
 # **Pipes**
 
 ---
+
+- A Pipe is used by the shell to connect the output of one command directly to the input of another command.
+
+- **command1 [args] | command2 [args]**
+
+```sh
+cd /etc         # A lot of files out there
+ls -l | more    # Piped ---> keep Spacing bar to view more....
+```
+
 
 
 
