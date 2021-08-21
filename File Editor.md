@@ -27,9 +27,12 @@ vim     # Advanced version of vi
 i       # Insert
 esc     # Escape out of any mode
 r       # replace
-d       # delete    
+d       # delete entire line   
 :q!     # quit without saving
 :wq!    # quit and save
+u       # Undo Changes
+x       # Remove one char
+o       # new line + insert mode
 ```
 
 
